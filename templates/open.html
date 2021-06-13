@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body%}
+
+    <div class="container">
+
+        <div class="text-center">
+            <img src="{{ Employee.image.url }}" class="rounded-circle" width="200" height="200" alt="image">
+        </div>
+
+        <div class="shadow-lg pb-2 pt-2 bg-white rounded mt-4 text-center">
+            <h4> {{ Employee.name }}</h4><br>
+            <h4>{{ Employee.email }}</h4><br>
+            <h4>{{ Employee.cnic }}</h4><br>
+            <h4>{{ Employee.department }} Department</h4><br>
+        </div>
+
+        <a  href="{% url 'index' %}" class="btn btn-primary mt-4">Home</a>
+
+    </div>
+
+
+
+{% endblock %}
